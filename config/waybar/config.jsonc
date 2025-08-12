@@ -149,6 +149,7 @@
     },
     "backlight": {
         // "device": "acpi_video1",
+        "tooltip": false,
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
@@ -159,7 +160,7 @@
             "critical": 20
         },
         "interval": 5,
-	"format": "{capacity}% {icon}",
+        "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
@@ -186,7 +187,7 @@
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid}  ",
         "format-ethernet": "{ipaddr}/{cidr}  ",
-        "tooltip-format": "{ifname} via {gwaddr}  ",
+        "tooltip": false,
         "format-linked": "{ifname} (No IP)  ",
         "format-disconnected": "Disconnected ⚠ ",
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
@@ -216,16 +217,20 @@
     "custom/mpd": {
         "exec": "~/.config/waybar/mpd_title.sh",
         "interval": 2,
-  	"format": " {}"
+        "format": " {}"
      },
     "custom/spectrum": {
-	"exec": "~/.config/waybar/scripts/spectrum.sh",
-	"interval": 1,
-	"return-type": "json"
+        "exec": "~/.config/waybar/scripts/spectrum.sh",
+        "interval": 1,
+        "return-type": "json"
     },
     "custom/nowplaying": {
- 	"exec": "~/.config/waybar/scripts/player.sh",
-	"interval": 4
+        "exec": "~/.config/waybar/scripts/player.sh",
+		"tooltip": false,
+        "on-click": "playerctl previous",         // Left click → previous song
+        "on-click-middle": "playerctl play-pause",// Middle click → toggle play/pause
+        "on-click-right": "playerctl next",       // Right click → next song
+        "interval": 4
     },
     "custom/power": {
         "format" : "⏻ ",
