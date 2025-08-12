@@ -1,0 +1,142 @@
+/* Base style with Nord theme colors */
+* {
+  font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  min-height: 0;
+  border: none;
+  background: transparent;
+  color: #D8DEE9;
+}
+
+/* Waybar main bar background */
+#waybar {
+  background: rgba(46, 52, 64, 0.77); /* Nord polar night */
+  border-radius: 22px;
+  padding: 4px 10px;
+}
+
+/* Modules common */
+#custom-volume,
+#pulseaudio,
+#clock,
+#battery,
+#network,
+#cpu,
+#memory,
+#tray,
+#custom-launcher,
+#custom-power,
+#temperature,
+#backlight {
+  padding: 3px 7px;
+  border-radius: 11px;
+  /*border: 1px solid rgba(129,161,192,0.8);*/ /* Slightly brighter than bar bg */
+}
+
+#workspaces button, #idle_inhibitor {
+  padding: 3px 12px;
+  border-radius: 11px;
+}
+
+#workspaces button {
+  border-radius: 5px;
+  margin: 0 3px;
+  padding: 0 15px;
+  background-color: rgba(0,0,0,0);
+}
+
+/* Hover and focused workspace */
+#workspaces button:hover {
+  background: rgba(66, 77, 99, 0.8);
+  color: #ECEFF4;
+}
+
+#workspaces button.active {
+  /* background: rgba(129, 161, 193, 0.8); */ /* Nord blue */
+  color: #2E3440;
+  border-bottom: 3px solid rgba(129, 161, 192, 0.8);
+}
+
+/* Clock */
+#clock {
+  /*color: #EBCB8B; Nord yellow */
+  color: #000F00;
+  background: #81A1C1;
+  border: 0;
+  border-radius: 17px;
+  padding: 3px 13px; 
+  margin: 5px 5px;
+}
+
+/* Battery */
+#battery {
+  color: #A3BE8C; /* Nord green */
+}
+#battery.charging {
+  color: #B48EAD; /* Nord purple */
+}
+#battery.critical {
+  color: #BF616A; /* Nord red */
+}
+
+/* Network */
+#network {
+  color: #88C0D0; /* Nord cyan */
+}
+
+/* PulseAudio */
+#pulseaudio, #custom-volume {
+  color: #81A1C1; /* Nord blue */
+}
+
+/* CPU & Memory */
+#memory {
+  color: #D08770; /* Nord orange */
+}
+#cpu {
+  color: #B48EAD; /* Nord purple */
+}
+
+#backlight {
+  color: #D2D2D2;
+}
+
+#temperature {
+  color: #EBCB8B;
+}
+
+/* Tray */
+#tray {
+  padding-right: 8px;
+}
+
+#mpd {
+  color: #A3BE8C;
+}
+
+/* Custom launcher icon */
+#custom-launcher {
+  color: #5E81AC;
+}
+
+/* Power button (custom module) */
+#custom-power {
+  color: #BF616A;
+}
+#custom-power:hover {
+  background: rgba(191, 97, 106, 0.2);
+}
+#custom-spectrum {
+  font-family: monospace;
+  color: #88C0D0;
+  font-size: 12px;
+}
+#custom-nowplaying {
+  border-radius: 0;
+  border-bottom: 1px solid #ADADAD;
+  padding: 7px 5px; 
+}
+#window {
+  padding: 3px 7px;
+}

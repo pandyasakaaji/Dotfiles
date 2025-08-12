@@ -1,0 +1,15 @@
+<menu>
+  <item label=" Shutdown">
+    <action type="command">shutdown</action>
+  </item>
+  <item label=" Reboot">
+    <action type="command">reboot</action>
+  </item>
+  <item label=" Suspend">
+    <action type="command">systemctl suspend</action>
+  </item>
+  <item label=" Hibernate">
+    <action type="command">systemctl hibernate</action>
+  </item>
+</menu>
+
