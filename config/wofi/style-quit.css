@@ -1,8 +1,20 @@
 window { 
     margin: 0px;
-    border: 2px solid #81A1C1;
-    background-color: rgba(46, 52, 64, 0.95);
-    border-radius: 12px;
+    padding: 10px;
+    border: 1px solid #88c0d0;
+    background-color: rgba(46, 52, 64, 0.6); /* More glassy */
+    border-radius: 14px;
+}
+
+#prompt {
+    font-size: 18px;
+    font-weight: bold;
+    color: #eceff4;
+    margin: 10px;
+    padding: 8px 12px;
+    background-color: rgba(59, 66, 82, 0.5); /* Soft highlight behind prompt */
+    border-radius: 8px;
+    text-align: center;
 }
 
 #entry {
@@ -10,18 +22,15 @@ window {
     border: none;
     border-radius: 8px;
     margin: 5px;
-    background-color: rgba(59, 66, 82, 0.7);
-    color: #D8DEE9;
+    background-color: rgba(59, 66, 82, 0.5);
+    color: #d8dee9;
+    transition: background-color 0.15s ease, transform 0.1s ease;
 }
 
 #entry:selected {
-    background-color: #81A1C1;
-}
-
-#prompt {
-    font-size: 18px;
+    background-color: rgba(129, 161, 193, 0.7); /* Nord accent */
+    color: #2e3440;
     font-weight: bold;
-    color: #ECEFF4;
-    margin: 10px;
+    transform: scale(1.02); /* Slight pop on selection */
 }
 
