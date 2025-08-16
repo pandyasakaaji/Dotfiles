@@ -25,5 +25,5 @@ else
 fi
 
 # Echo with icon
-echo "$short_artist - $short_title"
+echo "( $short_artist - $short_title )"
 
