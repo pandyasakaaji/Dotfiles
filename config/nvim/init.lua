@@ -37,11 +37,5 @@ vim.opt.mouse = "a"                            -- Enable mouse support
 vim.cmd("syntax enable")
 vim.cmd("syntax on")
 
--- ----- Clipboard -----
-vim.opt.clipboard = "unnamedplus"
-
--- ----- Mapleader -----
-vim.g.mapleader = " "
-
 -- ----- Lazynvim -----
 require("config.lazy")
