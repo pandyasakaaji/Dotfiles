@@ -17,8 +17,8 @@ vim.opt.showmatch = true                      -- Highlight matching brackets
 vim.opt.scrolloff = 5                         -- Keep 5 lines visible above/below cursor
 
 -- ----- Indentation -----
-vim.opt.tabstop = 2                           -- Tabs are 4 spaces
-vim.opt.shiftwidth = 2                        -- Indent is 4 spaces
+vim.opt.tabstop = 4                           -- Tabs are 4 spaces
+vim.opt.shiftwidth = 4                        -- Indent is 4 spaces
 vim.opt.expandtab = true                      -- Use spaces instead of tabs
 vim.opt.smartindent = true                    -- Auto-indent new lines
 
