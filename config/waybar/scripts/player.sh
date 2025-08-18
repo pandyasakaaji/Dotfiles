@@ -13,8 +13,8 @@ escape_markup() {
     str="${str//&/&amp;}"   # Escape &
     str="${str//</&lt;}"   # Escape <
     str="${str//>/&gt;}"   # Escape >
-    str="${str//\"/&quot;}" # Escape "
-    str="${str//\'/&apos;}" # Escape '
+    # str="${str//\"/&quot;}" # Escape "
+    # str="${str//\'/&apos;}" # Escape '
     echo "$str"
 }
 
