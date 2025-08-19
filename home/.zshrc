@@ -104,9 +104,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ins="sudo pacman -S"
-alias up="sudo pacman -Syyu"
+alias upd="sudo pacman -Syyu"
 alias insx="yay -S"
-alias upx="yay -Syyu"
+alias updx="yay -Syyu"
 alias unins="sudo pacman -Rns"
 alias uninsx="yay -Rns"
 
