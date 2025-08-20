@@ -9,30 +9,30 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-   	"custom/separator",
-	"hyprland/window"	    
+        "custom/separator",
+        "hyprland/window"	    
     //    "sway/mode",
     //    "sway/scratchpad",
     //    "custom/media"
     ],
     "modules-center": [
         //"hyprland/window"
-  	"custom/nowplaying"
+        "custom/nowplaying"
     ],
     "modules-right": [
     //    "mpd",
     //    "idle_inhibitor",
-    "network",
-	"custom/separator",
+        "network",
+        "custom/separator",
         "pulseaudio",
-	"custom/separator",
+        "custom/separator",
     //    "power-profiles-daemon",
         "cpu",
         "custom/separator", 
-	"memory",
+        "memory",
     //    "temperature",
         "custom/separator",
-    	"backlight",
+        "backlight",
     //    "keyboard-state",
     //    "sway/language",
         "custom/separator",
@@ -44,27 +44,27 @@
     //    "custom/power"
     ],
     // Modules configuration
-     "hyprland/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "warp-on-scroll": false,
-         "format": "{icon}",
-         "format-icons": {
-         "1": "一",
-    	 "2": "二",
-    	 "3": "三",
-    	 "4": "四",
-    	 "5": "五",
-    	 "6": "六",
-    	 "7": "七",
-    	 "8": "八",
-    	 "9": "九",
-    	 "10": "十",
-  	     "urgent": "!",
-             "focused": "",
-             "default": ""
-         },
-     },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "warp-on-scroll": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十",
+            "urgent": "!",
+            "focused": "",
+            "default": ""
+        },
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -126,11 +126,11 @@
         // }
     },
     "clock": {
-      "name": "clock",
-      "tooltip-format": "<tt>{calendar}</tt>",
-      "interval": 1,
-      "format": "{:%I.%M %p}",  // This shows like 08:21:15 PM
-      "on-click": "notify-send '⏰ Time Now' \"$(date)\""
+        "name": "clock",
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "interval": 1,
+        "format": "{:%I.%M %p}",  // This shows like 08:21:15 PM
+        "on-click": "notify-send '⏰ Time Now' \"$(date)\""
     },
     "cpu": {
         "format": "{usage}% ",
@@ -173,15 +173,15 @@
         "bat": "BAT2"
     },
     "power-profiles-daemon": {
-      "format": "{icon}",
-      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
-      "tooltip": true,
-      "format-icons": {
-        "default": " ",
-        "performance": " ",
-        "balanced": " ",
-        "power-saver": " "
-      }
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": " ",
+            "performance": " ",
+            "balanced": " ",
+            "power-saver": " "
+        }
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
@@ -193,7 +193,7 @@
         "format-alt": "{ifname}: {ipaddr}/{cidr}"
     },
     "pulseaudio": {
-	    "format": "{volume}% {icon}",
+        "format": "{volume}% {icon}",
         "format-muted": "Muted ",
         "tooltip": false,
         "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
@@ -218,7 +218,7 @@
         "exec": "~/.config/waybar/mpd_title.sh",
         "interval": 2,
         "format": " {}"
-     },
+    },
     "custom/spectrum": {
         "exec": "~/.config/waybar/scripts/spectrum.sh",
         "interval": 1,
@@ -226,7 +226,7 @@
     },
     "custom/nowplaying": {
         "exec": "~/.config/waybar/scripts/player.sh",
-		"tooltip": false,
+        "tooltip": false,
         "on-click": "playerctl previous",         // Left click → previous song
         "on-click-middle": "playerctl play-pause",// Middle click → toggle play/pause
         "on-click-right": "playerctl next",       // Right click → next song
@@ -234,18 +234,18 @@
     },
     "custom/power": {
         "format" : "⏻ ",
-		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
+        "tooltip": false,
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+        "menu-actions": {
+            "shutdown": "shutdown",
+            "reboot": "reboot",
+            "suspend": "systemctl suspend",
+            "hibernate": "systemctl hibernate"
+        }
     },
     "custom/separator": {
-    	"format": " / ",
-	"tooltip": false
+        "format": " / ",
+        "tooltip": false
     }
 }

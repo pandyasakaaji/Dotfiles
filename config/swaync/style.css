@@ -1,50 +1,50 @@
 * {
-  font-family: JetBrainsMono Nerd Font, sans-serif;
-  font-size: 13px;
-  color: #D8DEE9;
+    font-family: JetBrainsMono Nerd Font, sans-serif;
+    font-size: 13px;
+    color: #D8DEE9;
 }
 
 .notification {
-  background-color: #2E3440;
-  background-color: rgba(40,46,57,0.8);
+    background-color: #2E3440;
+    background-color: rgba(40,46,57,0.8);
 }
 .control-center {
-  background-color: rgba(40,46,57,0.8);
+    background-color: rgba(40,46,57,0.8);
 } 
 .notification, .control-center {
-  padding: 11px;
+    padding: 11px;
 }
 
 /* 🟢 Default position: top-right */
 #notification-box {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 /* 🔵 If ANY notification with progress bar exists, move the box to center */
 #notification-box:has(.notification-progress) {
-  left: 50%;
-  right: auto;
-  align-items: center;
-  transform: translateX(-50%);
+    left: 50%;
+    right: auto;
+    align-items: center;
+    transform: translateX(-50%);
 }
 
 /* 🔵 Style progress bar (volume/brightness) notifications */
 .notification:has(.notification-progress) {
-  background-color: rgba(46, 52, 64, 0.9);
-  color: #ECEFF4;
-  border-radius: 12px;
-  padding: 12px 16px;
-  margin: 6px 0;
-  font-family: "Sans", sans-serif;
-  min-width: 200px;
-  max-width: 400px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  text-align: center;
+    background-color: rgba(46, 52, 64, 0.9);
+    color: #ECEFF4;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin: 6px 0;
+    font-family: "Sans", sans-serif;
+    min-width: 200px;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 

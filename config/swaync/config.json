@@ -1,60 +1,60 @@
 {
-  "$schema": "/etc/xdg/swaync/configSchema.json",
-  "widgets": [
-    {
-      "name": "control-center",
-      "type": "control-center",
-      "positionX": "right",
-      "positionY": "top",
-      "layer": "overlay",
-      "control-center-margin-top": 10,
-      "control-center-margin-bottom": 10,
-      "control-center-margin-right": 10,
-      "widgets": [
-        "title",
-        "dnd",
-        "notifications"
-      ],
-      "notification-visibility": {
-        "default-timeout": 5000
-      }
-    },
+    "$schema": "/etc/xdg/swaync/configSchema.json",
+    "widgets": [
+        {
+            "name": "control-center",
+            "type": "control-center",
+            "positionX": "right",
+            "positionY": "top",
+            "layer": "overlay",
+            "control-center-margin-top": 10,
+            "control-center-margin-bottom": 10,
+            "control-center-margin-right": 10,
+            "widgets": [
+                "title",
+                "dnd",
+                "notifications"
+            ],
+            "notification-visibility": {
+                "default-timeout": 5000
+            }
+        },
 
-    {
-      "name": "osd",
-      "type": "notification_window",
-      "positionX": "center",
-      "positionY": "top",
-      "layer": "overlay",
-      "timeout": 2,
-      "margin-top": 20,
-      "script-fallbacks": {
-        "onclick": "swaync-client -t"
-      },
-      "notification-visibility": {
-        "group-by": "tag",
-        "filter": {
-          "tag": "osd"
-        }
-      }
-    },
+        {
+            "name": "osd",
+            "type": "notification_window",
+            "positionX": "center",
+            "positionY": "top",
+            "layer": "overlay",
+            "timeout": 2,
+            "margin-top": 20,
+            "script-fallbacks": {
+                "onclick": "swaync-client -t"
+            },
+            "notification-visibility": {
+                "group-by": "tag",
+                "filter": {
+                    "tag": "osd"
+                }
+            }
+        },
 
-    {
-      "name": "default",
-      "type": "notification_window",
-      "positionX": "right",
-      "positionY": "top",
-      "layer": "overlay",
-      "timeout": 5,
-      "margin-top": 10,
-      "notification-visibility": {
-        "group-by": "app-name",
-        "filter": {
-          "not-tag": "osd"
+        {
+            "name": "default",
+            "type": "notification_window",
+            "positionX": "right",
+            "positionY": "top",
+            "layer": "overlay",
+            "timeout": 5,
+            "margin-top": 10,
+            "notification-visibility": {
+                "group-by": "app-name",
+                "filter": {
+                    "not-tag": "osd"
+                }
+            }
         }
-      }
-    }
-  ],
-  "style": "/home/kisaragi/.config/swaync/style.css"
+    ],
+    "style": "/home/kisaragi/.config/swaync/style.css"
 }
 
